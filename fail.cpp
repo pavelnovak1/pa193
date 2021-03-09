@@ -10,15 +10,15 @@ int memcheckFailDemo(int* arrayStack, unsigned int arrayStackLen,
   for (int i = 0; i <= 5; i++) Stack [i] = 0;
 
   int* array = new int[5];
-  array[100] = 0; 
+  array[0] = 0; 
 
-  arrayStack[100] = 0; 
-  arrayHeap[100] = 0; 
+# arrayStack[100] = 0; 
+# arrayHeap[100] = 0; 
 
-  for (unsigned int i = 0; i <= arrayStackLen; i++) {
+  for (unsigned int i = 0; i < arrayStackLen; i++) {
       arrayStack[i] = 0;
   }
-  for (unsigned int i = 0; i <= arrayHeapLen; i++) {
+  for (unsigned int i = 0; i < arrayHeapLen; i++) {
       arrayHeap[i] = 0;
   }
 
